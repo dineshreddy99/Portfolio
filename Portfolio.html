@@ -15,14 +15,16 @@
             <div class="container">
                 <nav>
                     <img src="images/logo.jpg" class="logo">
+                    
                     <ul id="sidemenu">
-                        <li><a href="#header">Home</a></li>
+                        <!--<li><a href="#header">Home</a></li>-->
                         <li><a href="#about">About Me</a></li>
-                        <li><a href="#resume">Resume</a></li>
-                        <li><a href="#My-Work-Experience">Experience</a></li>
+                        
+                        <li><a href="#My-Work-Experience">Professional Experience</a></li>
                         <!-- <li><a href="#">Education</a></li> -->
                         <li><a href="#project">Projects</a></li>
                         <!-- <li><a href="#">Skills</a></li> -->
+                        <li><a href="#resume">Resume</a></li>
                         <li><a href="#contact">Contact</a></li>
                         <i class="fa-solid fa-x" onclick="closemenu()"></i>
                     </ul>
@@ -31,10 +33,10 @@
                 <div class="header-text">
                     <h1 id="animated-name">Dinesh Reddy Kankanala</h1>
 
-                    <h2>Software Engineer</h2>
+                    <h2>Data Analytical Engineer</h2>
                     <div class="social-icons">
                         <a href="https://www.linkedin.com/in/dinesh-reddy-k-120888191/"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://github.com/Siddarthn8"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://github.com/dineshreddy99"><i class="fa-brands fa-github"></i></a>
                     </div>
                 </div>
             </div>
@@ -48,29 +50,43 @@
                     </div>
                     <div class="about-col-2">
                         <h1 class="sub-title">About Me</h1>
-                        <p style="font-family: Minion Pro;">I'm a passionate software engineer fueled by a Master's degree in Information Technology from UNC Charlotte. My curiosity for the future of tech translates into a relentless pursuit of crafting elegant solutions for complex problems.  Currently, I'm applying my skills as a Full-Stack Engineer at DeltaSoft, where I've spearheaded projects that not only deliver exceptional user experiences (25% user satisfaction boost) but also optimize efficiency (20% infrastructure cost reduction, 25% deployment efficiency increase).</p>
-                        <p style="font-family: Minion Pro;">Beyond the back-end, my skillset extends to the front-end as well. I'm adept at crafting user-centric interfaces using HTML, CSS, and JavaScript frameworks like Bootstrap and jQuery. This focus on user experience is evident in my past project – a web-based Sprint Retrospective app (built with Node.js, Angular, and PostgreSQL) that boosted team productivity by 25%.  My collaborative spirit thrives in distributed teams, evident in my experience using Git version control and streamlining development through effective architecture design and documentation.</p>
+                        <p style="font-family: Minion Pro;">I'm a passionate Data Analytical Engineer fueled by a Master's degree in Information Technology specialized in Big Data Analytics from UNC Charlotte. I thrive on transforming raw data into compelling narratives. With over 3+ years of experience, I possess a keen eye for identifying trends and patterns within complex datasets. I excel at wrangling complex datasets, utilizing SQL and Python for data manipulation and cleaning. My analytical prowess extends to statistical modeling and hypothesis testing, allowing me to uncover hidden patterns and trends. I leverage data visualization tools like Tableau and Power BI to create clear, compelling visuals that effectively communicate insights to both technical and non-technical audiences.</p>
+                        <p style="font-family: Minion Pro;">I've honed my expertise in data ingestion, transformation, and storage. I'm adept at utilizing technologies like Apache Spark, Airflow, and cloud platforms (AWS & Azure) to design and implement scalable data pipelines that deliver clean, reliable data to fuel analytics initiatives. My expertise extends to designing scalable data architectures and implementing data quality checks to guarantee the integrity and consistency of information. I prioritize collaboration with cross-functional teams and stakeholders to ensure the data infrastructure supports their needs. Learn more about my skills, experience, and certifications with the toggles below! </p>
                         <div class="tab-titles">
                             <p class="tab-links active-link" onclick="opentab('skills');" style="font-family: Minion Pro;">Skills</p>
                             <p class="tab-links" onclick="opentab('experience')" style="font-family: Minion Pro;">Experience</p>
                             <p class="tab-links" onclick="opentab('education')"style="font-family: Minion Pro;">Education</p>
+                            <p class="tab-links" onclick="opentab('certifications')"style="font-family: Minion Pro;">Certifications</p>
                         </div>
+                        
                         <div class="tab-contents active-tab" id="skills">
+                            
                             <ul>
                                 
-                                <li><span style="font-family: Minion Pro;">Programming Languages: </span><br>Java, JavaScript, TypeScript, Python,  C++. </li>
-                                <li><span style="font-family: Minion Pro;">Web Development: </span><br>Spring Framework(Spring Boot, Spring MVC, Spring Data, Spring AOP, Spring Security, Hibernate, Spring Cloud), HTML5, CSS3, Angular, AngularJS, React (Next.js), Node.js, Express, Redux, Ajax, ASP.NET Core, ASP.NET MVC.</li>
-                                <li><span style="font-family: Minion Pro;">Databases: </span><br>Microsoft SQL Server, MongoDB, PL/SQL, PostgreSQL, DynamoDB.</li>
-                                <li><span style="font-family: Minion Pro;">Tools: </span><br>AWS, Docker, Kubernetes, Maven, GitHub, Jira, Postma, IntelliJ,  Eclipse, VS Code.</li>
-                                <li><span style="font-family: Minion Pro;">Cloud Technologies: </span><br>Microsoft Azure , AWS</li>
+                                <li><span style="font-family: Minion Pro;">Programming Languages: </span><br>Python, Scala, PowerShell & SQL </li>
+                                <li><span style="font-family: Minion Pro;">Hadoop Components / Big Data: </span><br>Apache Spark, Airflow, HDFS, MapReduce, Hive, HCatalog, HBase, Sqoop, Impala, 
+                                    Zookeeper, Kafka & Yarn.</li>
+                                <li><span style="font-family: Minion Pro;">Big Data technologies:</span><br> Hadoop, HDFS, Hive, Oozie, Sqoop, Spark, Machine Learning, Pandas, NumPy, Seaborn, 
+                                        Impala, Zookeeper, Airflow, Informatica, Snowflake, Data Bricks, Kafka.<br>. </li>
+                                <li><span style="font-family: Minion Pro;">Cloud Platform: </span><br>AWS (Lambda, S3, EC2, EMR, RDS), Microsoft Azure (Azure Databricks, Azure Data Factory, 
+                                    Azure Data Explorer, Azure HDInsight, ADLS).</li>
+                                <li><span style="font-family: Minion Pro;">Data Analytics Libraries: </span><br>Pandas, NumPy, SciPy, Scikit-learn & Matplotlib.</li>
+                                <li><span style="font-family: Minion Pro;">Reporting Tools: </span><br>AWS GLUE, Tableau & Power BI, Microsoft Excel.</li>
+                                <li><span style="font-family: Minion Pro;">Databases: </span><br>Oracle, SQL Server, MS Access & NoSQL Database (HBase, MongoDB, DynamoDB). </li>
                             </ul>
                         </div>
                         <div class="tab-contents" id="experience">
                             <ul>
-                                <li><span style="font-family: Minion Pro;">January, 2023 - Present</span><br>Software Engineer at  DeltaSoft (Client: NOV)</li>
-                                <li><span style="font-family: Minion Pro;">October, 2020 - December, 2021</span><br>Associate Systems Engineer at Tata Consultamcy Service (Client: Nissan)</li>
-                                <li><span style="font-family: Minion Pro;">January, 2020 - September, 2020</span><br>Software Engineer Intern at Netcidr</li>
+                                <li><span style="font-family: Minion Pro;">January, 2023 - Present</span><br>Data Analyst at  DeltaSoft (Client: NOV)</li>
+                                <li><span style="font-family: Minion Pro;">October, 2020 - December, 2021</span><br>Associate Software Engineer (Data) at Tata Consultamcy Service (Client: Nissan)</li>
+                                <li><span style="font-family: Minion Pro;">January, 2020 - September, 2020</span><br>Data Analytical Engineer Intern at Netcidr</li>
 
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="certifications">
+                            <ul>
+                                <li><a href="https://www.credly.com/badges/88548ddf-55cd-429b-9b7b-34e83197dd75/public_url" style="font-family: Minion Pro;color: white ;">AWS Academy Data Analytics Certification</a></li>
+                                <li><a href="https://www.credly.com/badges/b9260604-59e8-48ea-9292-47ccde6f326a/linked_in_profile" style="font-family: Minion Pro;color: white ;">Microsoft Certified: Azure Developer Associate</a></li>
                             </ul>
                         </div>
                         <div class="tab-contents" id="education">
@@ -96,18 +112,21 @@
 <!---------------------------Experience------------------------ -->
         <div id="My-Work-Experience">
             <div class="container">
-                <h1 class="sub-title">My Work</h1>
+                <h1 class="sub-title">Professional Experience</h1>
                 <div class="services-list">
                     <div>
                         <i class="fa-solid fa-code"></i>
                         <h1>DeltaSoft (Client: NOV)</h1>
-                        <h2>Software Engineer</h2>
+                        <h2>Data Analyst</h2>
                         <!-- Hidden description -->
                         <div class="service-description">
-                            <p style="line-height: 1.6; font-family: Minion Pro;">1. Engineered a high-performing Java-based full-stack application leveraging AWS(EC2, S3, Lambda, RDS) and Docker for scalable and cost-effective deployment, achieving a 20% infrastructure cost reduction and a 25% increase in deployment efficiency .</p>
-                            <p style="line-height: 1.6; font-family: Minion Pro;">2. Built and Customized UI components for the application utilizing HTML, CSS, JavaScript frameworks (Bootstrap, jQuery) and optimized database management with PostgreSQL & MongoDB, resulting in a 25% user satisfaction boost, 30% bounce rate reduction, and 20% decrease in database bottlenecks, alongside a 30% increase in data accuracy.</p> 
-                            <p style="line-height: 1.6; font-family: Minion Pro;">3. Utilized React, Spring Boot and Hibernate to drive a 25% user engagement increase and 15% development time reduction.</p> 
-                            <p style="line-height: 1.6; font-family: Minion Pro;">4. Seamlessly collaborated with distributed teams using Git version control (Git, GitHub, Gitlab) for boost in codebase integrity.</p>
+                            <p style="line-height: 1.6; font-family: Minion Pro;">1. Employed SQL and Python to execute comprehensive data analysis, applying techniques such as data visualization, data 
+                                mining, and data warehousing, which resulted in extracting valuable insights from diverse datasets, contributing to a 20% 
+                                increase in data-driven decision-making. Built and utilized data warehouses for efficient data storage and retrieval .</p>
+                            <p style="line-height: 1.6; font-family: Minion Pro;">2. Improved real-time decision making by 15% through rigorous Exploratory Data Analysis (EDA) and advanced statistical modeling.</p> 
+                            <p style="line-height: 1.6; font-family: Minion Pro;">3. Enhanced data accessibility and understanding by 30% for stakeholders through the creation of solution-oriented dashboards and visualizations in Power BI.</p> 
+                            <p style="line-height: 1.6; font-family: Minion Pro;">4. Achieved a 20% boost in query performance and data warehouse efficiency through strategic use of SQL queries and optimization techniques.</p>
+                            <p style="line-height: 1.6; font-family: Minion Pro;">5. Crafted data-driven narratives through interactive Power BI reports featuring KPIs and statistical analysis dashboards empowering stakeholders to make informed decisions.</p>
                         </div>
                         <!-- Learn more link -->
                         <!-- <a href="#" class="learn-more" onclick="toggleDescription(event, 'desc1')">learn more</a> -->
@@ -115,14 +134,14 @@
                     <div>
                         <i class="fa-solid fa-code"></i>
                         <h1>Tata Consultancy Services</h1>
-                        <h2>Assistant Systems Engineer</h2>
+                        <h2>Data Analytical Engineer</h2>
                         <!-- Hidden description -->
                         <div class="service-description">
-                            <p style="line-height: 1.6; font-family: Minion Pro;">1. Employed Agile methodology (SDLC) with TDD, CI/CD for streamlined development and seamless integration within distributed teams.</p>
-                            <p style="line-height: 1.6; font-family: Minion Pro;">2. Enhanced application performance with 60% processing time reduction in a medical viewer app (React JS, Java) and optimized database queries with triggers and stored procedures.</p> 
-                            <p style="line-height: 1.6; font-family: Minion Pro;">3. Designed and deployed microservices using Spring Cloud and RabbitMQ, leading to a 40% reduction in processing time.</p> 
-                            <p style="line-height: 1.6; font-family: Minion Pro;">4. Built a web-based Sprint Retrospective app (Node.js, Angular, PostgreSQL) with PDF generation, boosting team productivity by 25%.</p>
-                            <p style="line-height: 1.6;font-family: Minion Pro;">5. Automated test case execution and reporting with Jenkins and Docker, resulting in reduction in post-deployment issues.</p>
+                            <p style="line-height: 1.6; font-family: Minion Pro;">1. Achieved real-time data ingestion of high-volume data using Spark Streaming and Kafka, leading to a 20% reduction in risk detection latency and faster response to threats.</p>
+                            <p style="line-height: 1.6; font-family: Minion Pro;">2. Translated user needs into robust ETL pipelines using Databricks and Azure Data Factory, optimizing data quality and efficiency within complex regulations.</p> 
+                            <p style="line-height: 1.6; font-family: Minion Pro;">3. Developed and managed Azure Data Factory on the Azure platform, utilizing Blob storage for data persistence and backup, ensuring secure and scalable data processing.</p> 
+                            <p style="line-height: 1.6; font-family: Minion Pro;">4. Established distributed environments for data processing using Python-based Spark applications and PySpark for loading data into Azure SQL DB tables.</p>
+                            <p style="line-height: 1.6;font-family: Minion Pro;">5. Implemented a distributed stream processing platform for low-latency data integration, enabling real-time data pipelines within and outside Azure.</p>
                         </div>
                         <!-- Learn more link -->
                         <!-- <a href="#" class="learn-more" onclick="toggleDescription(event, 'desc1')">learn more</a> -->
@@ -130,13 +149,14 @@
                     <div>
                         <i class="fa-solid fa-code"></i>
                         <h1>NetCidr</h1>
-                        <h2>Software Engineer Intern</h2>
+                        <h2>Data Analytical Engineer Intern</h2>
                         <!-- Hidden description -->
                         <div class="service-description">
-                            <p style="line-height: 1.6; font-family: Minion Pro;">1. Engineered high-performance Java application, achieving a 20% reduction in response times and a 15% system efficiency gain.</p>
-                            <p style="line-height: 1.6; font-family: Minion Pro;">2. Developed efficient RESTful APIs using Java, JSP, JDBC and JSF for a 20% boost in data retrieval and system responsiveness. </p>
-                            <p style="line-height: 1.6; font-family: Minion Pro;">3. Optimized Java applications with jQuery, achieving a 20% client-side performance improvement and seamless backend integration. This process included defining access permissions, establishing security guidelines.  </p>
-                            <p style="line-height: 1.6; font-family: Minion Pro;">4. Architected scalable JMS solutions and revitalized data access with Hibernate, increasing message delivery reliability by 20%, reducing database query response times by 25%, and improving overall system efficiency. </p>
+                            <p style="line-height: 1.6; font-family: Minion Pro;">1. Uncovered key patterns in financial data using advanced Excel and SQL, directly influencing strategic investment decisions.</p>
+                            <p style="line-height: 1.6; font-family: Minion Pro;">2. Assisted in variance analysis, learning to identify discrepancies that can potentially save companies money. </p>
+                            <p style="line-height: 1.6; font-family: Minion Pro;">3. Contributed to data governance initiatives, understanding the importance of data integrity and compliance.  </p>
+                            <p style="line-height: 1.6; font-family: Minion Pro;">4. Utilized Power BI to create basic financial visualizations, building skills to communicate insights effectively. </p>
+                            <p style="line-height: 1.6; font-family: Minion Pro;">5. Performed data cleaning and wrangling tasks, contributing to improved data quality and accuracy for future financial analysis. </p>
                         </div>
                         
                     </div>
@@ -166,11 +186,12 @@
             
             <div class="work">
                 <div class="text-content">
-                    <h3>Network Based Application Development</h3>
+                    <h3>Automatic Speech Recognition</h3>
                     <div class="service-description">
-                        <p style="font-family: Minion Pro;"> 1. Developed a secure games trading web app with modernized UI, utilizing MVC architecture, Node.js, Express JS, and MongoDB, featuring permission-based approval, robust authentication, and password hashing for enhanced data security.  </p>
-                        <p style="font-family: Minion Pro;"> 2. Automated build, test, and deployment workflows with GitHub Actions, leveraged Amazon EC2 for scalability, AWS S3 bucket for static file storage, and Amazon DocumentDB for efficient data management, ensuring streamlined development and optimized data storage and retrieval.  </p>    
-                        <p style="font-family: Minion Pro;"> Tech Stack: Node.js, Express.js & Mongo DB</p>  
+                        <p style="font-family: Minion Pro;"> 1. Built a web application utilizing a powerful speech recognition library powered by machine learning. This allows for accurate and efficient conversion of spoken language into text in real-time, even with background noise or varying accents.  </p>
+                        <p style="font-family: Minion Pro;"> 2. Incorporated TextBlob, enabling the application to analyze the emotional sentiment of the transcribed text, providing valuable insights beyond just the words themselves.  </p>
+                        <p style="font-family: Minion Pro;"> 2. Leveraged Google Translate to provide translation options for the transcribed text, making your application a global communication tool.  </p>    
+                        <p style="font-family: Minion Pro;"> Tech Stack: Streamlit, TextBlob, googleTrans</p>  
                     </div>  
                 </div>
                 
@@ -220,14 +241,14 @@
                         <p style="font-family: Minion Pro;">Alternate E-Mail <a href="mailto:dkankana@uncc.edu" class="email-link"><i class="fa-solid fa-envelope"></i></a>: dkankana@uncc.edu</p>
                         
                     </div>
-                    <div class="contact-right">
+                   <!--- <div class="contact-right">
                         <form name="submit-to-google-sheet">
                             <input type="text" name="Name" placeholder="Your Name" required>
                             <input type="email" name="Email" placeholder="Your Email" required>
                             <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
                             <button type="submit" class="btn btn2">Submit</button>
                         </form>
-                        <span id="msg"></span>
+                        <span id="msg"></span>-->
                     </div>
                 </div>
             </div>

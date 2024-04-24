@@ -159,9 +159,11 @@ nav ul li a:hover::after{
     font-size: 50px;
     font-weight: 600;
     color: #fff;
+    font-family: Minion Pro;
 }
 .tab-titles{
     display: flex;
+    font-family: Minion Pro;
     margin: 20px 40px 40px;
 }
 .tab-links{
@@ -170,11 +172,13 @@ nav ul li a:hover::after{
     font-weight: 500;
     cursor: pointer;
     position: relative;
+    font-family: Minion Pro;
 }
 .tab-links::after{
     content: '';
     width: 0;
     height: 3px;
+    font-family: Minion Pro;
     background: #4b618a;
     position: absolute;
     left: 0;
@@ -183,22 +187,28 @@ nav ul li a:hover::after{
 }
 .tab-links.active-link::after{
     width: 50%;
+    font-family: Minion Pro;
 }
 .tab-contents ul li{
     list-style: none;
     margin: 10px 0;
+    font-family: Minion Pro;
     /* margin-left: 5px; */
     /* margin-right: 5px; */
 }
 .tab-contents ul li span{
     color: #4b618a;
     font-size: 16px;
+    font-family: Minion Pro;
 }
 .tab-contents{
     display: none;
+    font-family: Minion Pro;
+    
 }
 .tab-contents.active-tab{
     display: block;
+    font-family: Minion Pro;
 
 }
 /* ---------------resume------------- */
