@@ -1,0 +1,578 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body{
+    /* background: #cacdcb; */
+    background: #202325;
+    font-family: 'Libre Baskerville', serif;
+    /* for tiles              #efefec */
+    /* background: #212322; */
+    Color: #fff;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    /* background-image: url(images/formal1_3.png); */
+    /* background-image: url(images/background.jpg); */
+    background-image: url(images/sde.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.container{
+    padding: 10px 10%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo{
+    width: 250px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: #000000;
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+    font-weight: 550;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    /* background: #0000ff; */
+    background: #4b618a;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.header-text{
+    margin-top: 20%;
+    font-size: 30px;
+}
+.header-text h2{
+    font-size: 30px;
+    margin-top: 20px;
+    color: #000000;
+}
+.header-text h1{
+    font-size: 60px;
+    margin-top: 5px;
+    color: #4b618a;
+}
+/*-------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Literata&display=swap');
+
+
+  @keyframes swipeInLeft {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    /* End the actual animation at 50% to allocate the rest 50% as a delay */
+    50% {
+      transform: translateX(0%);
+      opacity: 1;
+    }
+    /* From 50% to 100%, there are no changes, acting as a delay */
+    100% {
+      transform: translateX(0%);
+      opacity: 1;
+    }
+  }
+  
+  .header-text h1 {
+    /* Adjust the total duration to include both the animation and the delay */
+    /* For instance, 8s here means 4s for the swipe in and 4s for the delay */
+    animation: swipeInLeft 8s ease-in-out infinite;
+    font-family: 'Literata', serif;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .header-text h2 {
+    animation-name: slideIn;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode: both; /* Ensures the element remains in the final state of the animation */
+  }
+  
+  
+
+.header-text p{
+    color: #000000;
+}
+/* ---------------about------------- */
+#about{
+    padding: 85px 0;
+    color: #ababab; 
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1{
+    flex-basis: 35%;
+}
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+.about-col-2{
+    flex-basis: 60%;
+}
+.about-col-2 p{
+    margin-bottom: 10px;
+}
+.sub-title{
+    font-size: 50px;
+    font-weight: 600;
+    color: #fff;
+    font-family: Minion Pro;
+}
+.tab-titles{
+    display: flex;
+    font-family: Minion Pro;
+    margin: 20px 40px 40px;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    font-family: Minion Pro;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    font-family: Minion Pro;
+    background: #4b618a;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-links.active-link::after{
+    width: 50%;
+    font-family: Minion Pro;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+    font-family: Minion Pro;
+    /* margin-left: 5px; */
+    /* margin-right: 5px; */
+}
+.tab-contents ul li span{
+    color: #4b618a;
+    font-size: 16px;
+    font-family: Minion Pro;
+}
+.tab-contents{
+    display: none;
+    font-family: Minion Pro;
+    
+}
+.tab-contents.active-tab{
+    display: block;
+    font-family: Minion Pro;
+
+}
+/* ---------------resume------------- */
+.resume-section h1{
+    margin-bottom: 20px;
+}
+.resume-download-btn {
+    display: inline-block;
+    background-color: #4b618a;
+    color: white;
+    padding: 10px 20px;
+    margin: 20px 0;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.resume-download-btn:hover {
+    background-color: #4b618a;
+}
+/* ---------------experience------------- */
+#my-work-experience {
+    padding: 30px 0;
+}
+#my-work-experience h1{
+    margin-bottom: 20px;
+}
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creates a 2-column grid */
+    gap: 40px; /* Adjusts space between items */
+}
+
+.services-list div {
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+    /* 3D shadow effect */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    /* Slight lift effect on hover */
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.services-list div:hover {
+    /* Scale up effect on hover */
+    transform: scale(1.05);
+    /* Enhanced shadow on hover for more depth */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.services-list div i {
+    font-size: 20px;
+    /* You may want to add color or other styles for the icons here */
+}
+
+.services-list div i,
+.services-list div h1,
+.services-list div h2,
+.services-list div p {
+    margin-bottom: 15px;
+    color: #fff; /* Ensures text is visible against the dark background */
+}
+
+.service-description {
+    /* Ensures descriptions are always shown and readable */
+    display: block;
+    max-height: none;
+    overflow: visible;
+    color: #ddd; /* Lighter text color for readability */
+}
+
+/* -------------projects-------------- */
+#project {
+    padding: 30px 0;
+}
+#project h1 {
+    margin-bottom: 20px;
+}
+.work-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns layout */
+    gap: 40px;
+}
+.work-list .work .text-content h3{
+    margin-bottom: 20px;
+}
+.work-list .work .text-content p{
+    margin-bottom: 10px;
+}
+.work {
+    display: grid; /* Changed to grid for better control over image placement */
+    grid-template-columns: 1fr 120px; /* Text content and image columns */
+    grid-gap: 20px; /* Space between text and image */
+    align-items: start; /* Align items to the top */
+    background: #262626;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); /* 3D shadow effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.work:hover {
+    transform: translateY(-5px); /* Slightly raise the tile on hover */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); /* Enhanced shadow on hover */
+}
+/* .text-content {
+    If specific styles are needed for text content, add them here */
+/* } */
+.project-img {
+    width: 100%; /* Ensure the image takes up the full width of its column */
+    align-self: start; /* Align image to the top */
+    border-radius: 10px; /* Optional, for rounded corners */
+    justify-self: end; /* Align the image to the end of the column */
+}
+/* --------------contact me----------- */
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-left p{
+    /* color: #4b618a; */
+    margin-top: 30px;
+}
+.contact-left p i{
+    color: #4b618a;
+    margin-right: 15px;
+    font-size: 25px;
+}
+.social-icons{
+    margin-top: 30px;
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #262626;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.social-icons a:hover{
+    color: #4b618a;
+    transform: translateY(-5px);
+}
+.btn.btn2{
+    display: inline-block;
+    background: #4b618a;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px 0;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.contact-right form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+.thankyou{
+    background-color: #212322;
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    /* background: #262626; */
+    font-weight: 300;
+    margin-top: 20px;
+}
+.thankyou i{
+    color: #4b618a;
+    font-size: 20px;
+}
+/* ------------------css for small screen---------------------- */
+nav .fa-solid{
+    display: none;
+}
+@media only screen and (max-width:600px){
+    #header{
+        background-image: url(images/background2.jpg);
+    }
+    .header-text{
+        margin-top: 100%;
+        font-size: 16px;
+    }
+    .header-text h1{
+        font-size: 30px;
+    }
+    nav .fa-solid{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        background: #4b618a;
+        position: fixed;
+        top: 0;
+        /* right: -50px; */
+        /* width: 200px; */
+        width: 100%;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transform: translateX(100%);  /*chatgpt suggestion*/
+        transition: right 0.5s;
+    }
+    /* Add this new selector for when the menu is open */
+    nav ul.open {
+        transform: translateX(0); /* Show sidemenu */
+    }
+    /* Update existing styles for nav .fa-solid, etc., as needed */
+
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .sub-title{
+        font-size: 40px;
+    }
+    .about-col-1, .about-col-2{
+        flex-basis: 100%;
+        width: 100%;
+    }
+    .about-col-1{
+        margin-bottom: 30px;
+    }
+    .about-col-2{
+        font-size: 14px;
+        /* align-items: center; */
+        /* justify-content: space-between; */
+        /* padding-right: 10px; */
+    }
+    .work-list {
+        grid-template-columns: 1fr; /* Ensures single column layout on phones */
+    }
+    .work {
+        grid-template-columns: 1fr; /* Full width for the text, image stacks below */
+    }
+    .project-img {
+        justify-self: center; /* Center the image on smaller screens */
+        width: 80%; /* Adjust the image width as needed */
+        margin-top: 20px; /* Optional: Adds some space between the text and the image */
+    }
+    .tab-links{
+        font-size: 16px;
+        margin-right: 30px;
+    }
+    .contact-left, .contact-right{
+        flex-basis: 100%;
+    }
+    .thankyou{
+        font-size: 14px;
+    }
+}
+@media only screen and (min-width:601px) and (max-width:1024px){
+    #header{
+        background-image: url(images/background2.jpg);
+    }
+    .header-text{
+        margin-top: 100%;
+        font-size: 20px;
+    }
+    .header-text h1{
+        font-size: 40px;
+    }
+    nav .fa-solid{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        /* background: #0000ff; */
+        background: #4b618a;
+        position: fixed;
+        top: 0;
+        /* right: -50px; */
+        /* width: 200px; */
+        width: 100%;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        /* transform: translateX(100%);  chatgpt suggestion */
+        transition: right 0.5s;
+        transform: translateX(100%);
+    }
+    /* Add this new selector for when the menu is open */
+    nav ul.open {
+        transform: translateX(0); /* Show sidemenu */
+    }
+    /* Update existing styles for nav .fa-solid, etc., as needed */
+    nav .fa-solid.fa-bars, nav .fa-solid.fa-x {
+        display: block; /* Ensure icons are visible */
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .sub-title{
+        font-size: 40px;
+    }
+    .about-col-1, .about-col-2{
+        flex-basis: 100%;
+        width: 100%;
+    }
+    .about-col-1{
+        margin-bottom: 30px;
+    }
+    .about-col-2{
+        font-size: 14px;
+        /* align-items: center; */
+        /* justify-content: space-between; */
+        /* padding-right: 10px; */
+    }
+    .about-col-1 img, .about-col-2 {
+        flex-basis: 50%; /* Side-by-side layout for 'About Me' sections */
+    }
+    
+    .tab-links{
+        font-size: 16px;
+        margin-right: 30px;
+    }
+    .work-list {
+        grid-template-columns: 1fr; /* Single column layout for tablets */
+    }
+    .work {
+        grid-template-columns: 1fr; /* Adjust layout for single column */
+    }
+    .contact-left, .contact-right{
+        flex-basis: 100%;
+    }
+    .thankyou{
+        font-size: 14px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .services-list {
+        grid-template-columns: 1fr; /* Adjusts to a single column on smaller screens */
+    }
+}
+#msg{
+    color: #61b752;
+    margin-top: -10px;
+    display: block;
+}

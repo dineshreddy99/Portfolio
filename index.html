@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA_Compatible" content="IT=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/b6c59cb792.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="images/logo.jpg" class="logo">
+                    
+                    <ul id="sidemenu">
+                        <!--<li><a href="#header">Home</a></li>-->
+                        <li><a href="#about">About Me</a></li>
+                        
+                        <li><a href="#My-Work-Experience">Professional Experience</a></li>
+                        <!-- <li><a href="#">Education</a></li> -->
+                        <li><a href="#project">Projects</a></li>
+                        <!-- <li><a href="#">Skills</a></li> -->
+                        <li><a href="#resume">Resume</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-x" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <h1 id="animated-name">Dinesh Reddy Kankanala</h1>
+
+                    <h2>Data Analytical Engineer</h2>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/dinesh-reddy-k-120888191/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/dineshreddy99"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!---------------------------about------------------------ -->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/about.jpg">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p style="font-family: Minion Pro;">I'm a passionate Data Analytical Engineer fueled by a Master's degree in Information Technology specialized in Big Data Analytics from UNC Charlotte. I thrive on transforming raw data into compelling narratives. With over 3+ years of experience, I possess a keen eye for identifying trends and patterns within complex datasets. I excel at wrangling complex datasets, utilizing SQL and Python for data manipulation and cleaning. My analytical prowess extends to statistical modeling and hypothesis testing, allowing me to uncover hidden patterns and trends. I leverage data visualization tools like Tableau and Power BI to create clear, compelling visuals that effectively communicate insights to both technical and non-technical audiences.</p>
+                        <p style="font-family: Minion Pro;">I've honed my expertise in data ingestion, transformation, and storage. I'm adept at utilizing technologies like Apache Spark, Airflow, and cloud platforms (AWS & Azure) to design and implement scalable data pipelines that deliver clean, reliable data to fuel analytics initiatives. My expertise extends to designing scalable data architectures and implementing data quality checks to guarantee the integrity and consistency of information. I prioritize collaboration with cross-functional teams and stakeholders to ensure the data infrastructure supports their needs. Learn more about my skills, experience, and certifications with the toggles below! </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills');" style="font-family: Minion Pro;">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')" style="font-family: Minion Pro;">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')"style="font-family: Minion Pro;">Education</p>
+                            <p class="tab-links" onclick="opentab('certifications')"style="font-family: Minion Pro;">Certifications</p>
+                        </div>
+                        
+                        <div class="tab-contents active-tab" id="skills">
+                            
+                            <ul>
+                                
+                                <li><span style="font-family: Minion Pro;">Programming Languages: </span><br>Python, Scala, PowerShell & SQL </li>
+                                <li><span style="font-family: Minion Pro;">Hadoop Components / Big Data: </span><br>Apache Spark, Airflow, HDFS, MapReduce, Hive, HCatalog, HBase, Sqoop, Impala, 
+                                    Zookeeper, Kafka & Yarn.</li>
+                                <li><span style="font-family: Minion Pro;">Big Data technologies:</span><br> Hadoop, HDFS, Hive, Oozie, Sqoop, Spark, Machine Learning, Pandas, NumPy, Seaborn, 
+                                        Impala, Zookeeper, Airflow, Informatica, Snowflake, Data Bricks, Kafka.<br>. </li>
+                                <li><span style="font-family: Minion Pro;">Cloud Platform: </span><br>AWS (Lambda, S3, EC2, EMR, RDS), Microsoft Azure (Azure Databricks, Azure Data Factory, 
+                                    Azure Data Explorer, Azure HDInsight, ADLS).</li>
+                                <li><span style="font-family: Minion Pro;">Data Analytics Libraries: </span><br>Pandas, NumPy, SciPy, Scikit-learn & Matplotlib.</li>
+                                <li><span style="font-family: Minion Pro;">Reporting Tools: </span><br>AWS GLUE, Tableau & Power BI, Microsoft Excel.</li>
+                                <li><span style="font-family: Minion Pro;">Databases: </span><br>Oracle, SQL Server, MS Access & NoSQL Database (HBase, MongoDB, DynamoDB). </li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span style="font-family: Minion Pro;">January, 2023 - Present</span><br>Data Analyst at  DeltaSoft (Client: NOV)</li>
+                                <li><span style="font-family: Minion Pro;">October, 2020 - December, 2021</span><br>Associate Software Engineer (Data) at Tata Consultamcy Service (Client: Nissan)</li>
+                                <li><span style="font-family: Minion Pro;">January, 2020 - September, 2020</span><br>Data Analytical Engineer Intern at Netcidr</li>
+
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="certifications">
+                            <ul>
+                                <li><a href="https://www.credly.com/badges/88548ddf-55cd-429b-9b7b-34e83197dd75/public_url" style="font-family: Minion Pro;color: white ;">AWS Academy Data Analytics Certification</a></li>
+                                <li><a href="https://www.credly.com/badges/b9260604-59e8-48ea-9292-47ccde6f326a/linked_in_profile" style="font-family: Minion Pro;color: white ;">Microsoft Certified: Azure Developer Associate</a></li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span style="font-family: Minion Pro;">2023</span><br>Masters in Information Technology at University of North Carolina at Charlotte</li>
+                                <li><span style="font-family: Minion Pro;">2021</span><br>B.Tech in Electronics and Communication Engineering at Mahatma Gandhi Institute of Technology affiliated to JNTU-H</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!---------------------------Resume------------------------ -->
+        <div id="resume">
+            <div class="container">
+                <div class="resume-section">
+                    <h1 class="sub-title">Resume</h1>
+                    <p style="font-family: Minion Pro;">Download my full resume to see a detailed breakdown of my skills, experience, and education.</p>
+                    <a href="Resume/Resume_SDE.pdf" download="Dinesh_Reddy_Resume" class="resume-download-btn">Download Resume</a>
+                </div>
+            </div>
+        </div>
+<!---------------------------Experience------------------------ -->
+        <div id="My-Work-Experience">
+            <div class="container">
+                <h1 class="sub-title">Professional Experience</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h1>DeltaSoft (Client: NOV)</h1>
+                        <h2>Data Analyst</h2>
+                        <!-- Hidden description -->
+                        <div class="service-description">
+                            <p style="line-height: 1.6; font-family: Minion Pro;">1. Employed SQL and Python to execute comprehensive data analysis, applying techniques such as data visualization, data 
+                                mining, and data warehousing, which resulted in extracting valuable insights from diverse datasets, contributing to a 20% 
+                                increase in data-driven decision-making. Built and utilized data warehouses for efficient data storage and retrieval .</p>
+                            <p style="line-height: 1.6; font-family: Minion Pro;">2. Improved real-time decision making by 15% through rigorous Exploratory Data Analysis (EDA) and advanced statistical modeling.</p> 
+                            <p style="line-height: 1.6; font-family: Minion Pro;">3. Enhanced data accessibility and understanding by 30% for stakeholders through the creation of solution-oriented dashboards and visualizations in Power BI.</p> 
+                            <p style="line-height: 1.6; font-family: Minion Pro;">4. Achieved a 20% boost in query performance and data warehouse efficiency through strategic use of SQL queries and optimization techniques.</p>
+                            <p style="line-height: 1.6; font-family: Minion Pro;">5. Crafted data-driven narratives through interactive Power BI reports featuring KPIs and statistical analysis dashboards empowering stakeholders to make informed decisions.</p>
+                        </div>
+                        <!-- Learn more link -->
+                        <!-- <a href="#" class="learn-more" onclick="toggleDescription(event, 'desc1')">learn more</a> -->
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h1>Tata Consultancy Services</h1>
+                        <h2>Data Analytical Engineer</h2>
+                        <!-- Hidden description -->
+                        <div class="service-description">
+                            <p style="line-height: 1.6; font-family: Minion Pro;">1. Achieved real-time data ingestion of high-volume data using Spark Streaming and Kafka, leading to a 20% reduction in risk detection latency and faster response to threats.</p>
+                            <p style="line-height: 1.6; font-family: Minion Pro;">2. Translated user needs into robust ETL pipelines using Databricks and Azure Data Factory, optimizing data quality and efficiency within complex regulations.</p> 
+                            <p style="line-height: 1.6; font-family: Minion Pro;">3. Developed and managed Azure Data Factory on the Azure platform, utilizing Blob storage for data persistence and backup, ensuring secure and scalable data processing.</p> 
+                            <p style="line-height: 1.6; font-family: Minion Pro;">4. Established distributed environments for data processing using Python-based Spark applications and PySpark for loading data into Azure SQL DB tables.</p>
+                            <p style="line-height: 1.6;font-family: Minion Pro;">5. Implemented a distributed stream processing platform for low-latency data integration, enabling real-time data pipelines within and outside Azure.</p>
+                        </div>
+                        <!-- Learn more link -->
+                        <!-- <a href="#" class="learn-more" onclick="toggleDescription(event, 'desc1')">learn more</a> -->
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h1>NetCidr</h1>
+                        <h2>Data Analytical Engineer Intern</h2>
+                        <!-- Hidden description -->
+                        <div class="service-description">
+                            <p style="line-height: 1.6; font-family: Minion Pro;">1. Uncovered key patterns in financial data using advanced Excel and SQL, directly influencing strategic investment decisions.</p>
+                            <p style="line-height: 1.6; font-family: Minion Pro;">2. Assisted in variance analysis, learning to identify discrepancies that can potentially save companies money. </p>
+                            <p style="line-height: 1.6; font-family: Minion Pro;">3. Contributed to data governance initiatives, understanding the importance of data integrity and compliance.  </p>
+                            <p style="line-height: 1.6; font-family: Minion Pro;">4. Utilized Power BI to create basic financial visualizations, building skills to communicate insights effectively. </p>
+                            <p style="line-height: 1.6; font-family: Minion Pro;">5. Performed data cleaning and wrangling tasks, contributing to improved data quality and accuracy for future financial analysis. </p>
+                        </div>
+                        
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-handshake"></i>
+                        <h1>UNC Charlotte</h1>
+                        <h2>Operations Assistant</h2>
+                        
+                        <div class="service-description">
+                            <p style="line-height: 1.6; font-family: Minion Pro;">1. Managed event logistics, ensuring room setup, equipment functionality, and adherence to policies.</p>
+                            <p style="line-height: 1.6; font-family: Minion Pro;">2. Provided friendly and knowledgeable service, acting as a liaison between customers and staff. </p>
+                            <p style="line-height: 1.6; font-family: Minion Pro;">3. Resolved customer concerns efficiently and ensured events proceeded smoothly. </p>
+                            <p style="line-height: 1.6; font-family: Minion Pro;">4. Liaised with reservations and building services to ensure event success. </p>
+                            <p style="line-height: 1.6; font-family: Minion Pro;">5. Identified areas for improvement and proactively took steps to enhance the event experience. Successfully catered to diverse customer needs and ensured a positive event experience for everyone. </p>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+<!---------------------------projects--------------------------------------------------->
+<div id="project">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+            
+            <div class="work">
+                <div class="text-content">
+                    <h3>Automatic Speech Recognition</h3>
+                    <div class="service-description">
+                        <p style="font-family: Minion Pro;"> 1. Built a web application utilizing a powerful speech recognition library powered by machine learning. This allows for accurate and efficient conversion of spoken language into text in real-time, even with background noise or varying accents.  </p>
+                        <p style="font-family: Minion Pro;"> 2. Incorporated TextBlob, enabling the application to analyze the emotional sentiment of the transcribed text, providing valuable insights beyond just the words themselves.  </p>
+                        <p style="font-family: Minion Pro;"> 2. Leveraged Google Translate to provide translation options for the transcribed text, making your application a global communication tool.  </p>    
+                        <p style="font-family: Minion Pro;"> Tech Stack: Streamlit, TextBlob, googleTrans</p>  
+                    </div>  
+                </div>
+                
+            </div>
+            <div class="work">
+                <div class="text-content">
+                    <h3>Data Visualisation</h3>
+                    <p style="font-family: Minion Pro;"> 1. Studied the trend and relation between GDP, Military Expenditure and Population of various countries worldwide. </p>
+                    <p style="font-family: Minion Pro;"> 2. Developed a Dashboard using D3 & React JS with advanced visualisation techniques to study the past 30 years data. </p>    
+                    <p style="font-family: Minion Pro;"> 3. Added various interactively interlinked elements to understand and discover the various insights in the data.</p>
+                    <p style="font-family: Minion Pro;"> Tech Stack: D3.js, React.js, HTML & CSS </p>    
+                </div>
+                
+            </div>
+            <div class="work">
+                <div class="text-content">
+                    <h3>E-Commerce Application</h3>
+                    <p style="font-family: Minion Pro;"> 1. The fully operational web application facilitates seamless user experiences, enabling registration, product cart additions, purchases, and transactions. Also, implemented end-to-end encryption to enhance security measures by 30 percent. </p>
+                    <p style="font-family: Minion Pro;"> 2. Okta for customize drop-in solution to add authentication and authorization services to applications for 100 plus users.</p>
+                    <p style="font-family: Minion Pro;"> Tech Stack: Spring Boot, Rest API, Angular & MySQL</p>
+                </div>
+                
+            </div>
+            <div class="work">
+                <div class="text-content">
+                    <h3>Go-Based Web Application</h3>
+                    <p style="font-family: Minion Pro;"> 1. Built a comprehensive web application comprising a RESTful Go-based JSON API built with the Gorilla framework, leveraging PostgreSQL as the backend database for efficient product data management.  </p>
+                    <p style="font-family: Minion Pro;"> 2. Seamlessly integrated a ReactJS frontend for user-friendly product interaction and a gRPC service supporting real-time currency conversion.</p>
+                    <p style="font-family: Minion Pro;"> 3. Designed and implemented a Go-based image service to efficiently handle Gzipped content and image uploads, contributing to a high-performance application.</p>
+                    <p style="font-family: Minion Pro;"> Tech Stack: Golang, PostgreSQL & React.js </p>
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+<!------------------------Contact------------------------------------------- -->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p style="font-family: Minion Pro;"><a href="mailto:dineshreddyk569@gmail.com" class="email-link"><i class="fa-solid fa-envelope"></i></a>: dineshreddyk569@gmail.com</p>
+                        <p style="font-family: Minion Pro;"><a href="tel:+19803031749" class="phone-link"><i class="fa-solid fa-phone"></i></a>: (980) 303-1749</p>
+                        <p style="font-family: Minion Pro;">Alternate E-Mail <a href="mailto:dkankana@uncc.edu" class="email-link"><i class="fa-solid fa-envelope"></i></a>: dkankana@uncc.edu</p>
+                        
+                    </div>
+                   <!--- <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>-->
+                    </div>
+                </div>
+            </div>
+            <div class="thankyou">
+                <p style="font-family: Minion Pro;"> Please feel free to contact me with any questions or for further information.</p>
+                <i class="fa-solid fa-heart"></i>
+            </div>
+        </div>
+<!-------------------script for about------------------------------------- -->
+
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link")
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab")
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+
+            function toggleDescription(event, descId) {
+                event.preventDefault(); // Prevent the default anchor action
+                const descriptionElement = document.getElementById(descId);
+                
+                // Toggle the display state
+                if (descriptionElement.style.display === 'none' || !descriptionElement.style.display) {
+                    descriptionElement.style.display = 'block'; // Show the description
+                } else {
+                    descriptionElement.style.display = 'none'; // Hide the description
+                }
+            }
+
+            var sidemenu = document.getElementById("sidemenu")
+
+            function openmenu(){
+                sidemenu.style.right = 0;
+            }
+            function closemenu(){
+                sidemenu.style.right = "-200px";
+            }
+            function openmenu() {
+                document.getElementById("sidemenu").classList.add("open");
+            }
+
+            function closemenu() {
+                document.getElementById("sidemenu").classList.remove("open");
+            }
+            
+        </script>
+        
+          <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbwgceM8ENgMnYUNZX9JS8_M8a3FONMuJEPkTLRxAPuEPpxY0wT25rvyjK5LD6UIyMPlfw/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg")
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML = "Message sent Successfully"
+                    setTimeout(function(){
+                        msg.innerHTML= ""
+                    },5000)
+                    form.reset() 
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+    </body>
+</html>
